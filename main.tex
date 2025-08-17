@@ -1,0 +1,249 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - MODIFIED FOR MUCH BOLDER HEADINGS AND BIGGER LINES
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\Large\bfseries
+}{}{0em}{}[\color{black}\vspace{-12pt}\rule{\textwidth}{1.5pt} \vspace{-27pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\educationSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}, itemsep=-2pt, parsep=0pt, topsep=-2pt]}
+\newcommand{\educationSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Agustin Esteva} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:12109066466}{+1 (210) 906-6466}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:agustinestevah@gmail.com}{aesteva@uchicago.edu}
+    $|$
+    \faLinkedin \hspace{.5pt} \href{www.linkedin.com/in/agustin-esteva}{LinkedIn}
+    $\mid$
+    \faGithub \hspace{.5pt} \href{https://github.com/agustinestevah}{Github}
+    $|$
+    \faMapMarker \hspace{.5pt} Chicago, IL 60615
+\end{center}
+
+%----------- EDUCATION -----------
+
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {University of Chicago}{Chicago, IL}
+      {BS in Mathematics, BA in Economics   $\mid$ GPA: 3.88/4.00}{Sep 2023 \textbf{--} May 2027}
+        \educationSubHeadingListStart
+        \fontsize{8}{10.8}\selectfont{\item{
+            \textbf{Relevant Coursework:}}\fontsize{8}{10.8}\selectfont{ Honors Analysis in $\mathbb{R}^n$  $\mid$ Markov Chains/Martingales/Brownian Motion  $\mid$ Econometrics $\mid$ Intro to Computer Science}}
+        \fontsize{8}{10.8}\selectfont{\item{
+            \textbf{University Advanced Scholars:}}\fontsize{8}{10.8}\selectfont{ Selective scholarship for a five-year accelerated track to a Master's degree at UChicago}}
+        \educationSubHeadingListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{UChicago Math Research Experience for Undergraduates}}{Chicago, IL}
+      {Pure Mathematics Research}{Jun 2024 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Studied probability, real and complex analysis, combinatorics, algebra, financial mathematics, and stochastic calculus under UChicago professors and graduate students}
+            \resumeItem{Researched and gave talks on Schramm-Loewner Evolutions and Gaussian Free Fields under the guidance of Professor Stephen Yearwood, with special emphasis on the universality properties of these random curves}
+            \resumeItem{Published a 25-page expository paper titled "Measure Theory, Stochastic Calculus, and the Black-Scholes-Merton Model" on the measure theoretic derivation of the Black-Scholes formula using stochastic calculus and Girsanov's theorem}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant in Political Economics}{Chicago, IL}
+      {Research Assistant in Political Economics}{Jun 2025 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Worked under Nobel-laureate \href{https://voices.uchicago.edu/jamesrobinson/}{\color{blue} Dr. James Robinson} to study the effects of policy on Rwanda's 'miracle economy' by analyzing satellite and governmental data using R, Stata, and machine learning}
+            \resumeItem{Researched how social connectedness relates to productivity of government programs through advanced statistical analysis}
+            \resumeItem{Attended daily workshops on methods in the social sciences such as spatial data analysis, ethical research practices, and applied econometrics}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Speer Mathnasium}}{San Antonio, TX}
+      {Math Instructor}{Jun 2022 \textbf{--} May 2023}
+        \resumeItemListStart
+            \resumeItem{Evaluated and graded over 100 students' work, assignments, and performance while simultaneously providing instruction}
+            \resumeItem{Balanced multiple students at once to give personalized instruction on subjects ranging from algebra to advanced calculus}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Joint Science Technology Institute}{Chicago, IL}
+      {Materials Science Researcher}{Summer 2022}
+        \resumeItemListStart
+            \resumeItem{Data analyst for Los Alamos National Laboratories, the Defense Threat Reduction Agency, and the University of New Mexico}
+            \resumeItem{Studied materials science applications in nuclear engineering by analyzing data of Helium bubbling in Palladium samples using machine learning programs created with Python}
+            \resumeItem{Presented findings to researchers on the application of machine learning on data analysis for nuclear fusion research}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- ACTIVITIES & LEADERSHIP -----------
+
+\section{Activities \& Leadership}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Rocketry Project}{San Antonio, TX}
+      {Project Manager}{Aug 2019 \textbf{--} Jun 2023}
+        \resumeItemListStart
+            \resumeItem{Led the design and fabrication of a vehicle used to take a scientific payload 50,000 feet after approval and review of a mathematical flight profile presented to NASA flight engineers}
+            \resumeItem{Built all parts of the 300-lbs vehicle using in-house industrial machines after designing them on AutoCAD}
+            \resumeItem{Launched in June 2023 at White Sands Missile Testing Range (New Mexico) with an apogee of 23,000 feet}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Chicago Mathematics Department}{Chicago, IL}
+      {Grader}{Aug 2024 \textbf{--} Jun 2025}
+        \resumeItemListStart
+            \resumeItem{Responsible for grading and providing feedback on theoretical proofs for calculus problems for the UChicago Mathematics Department}
+            \resumeItem{Graded 60+ students' work every week, and provided instructors with useful feedback on the difficulty of the course}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Dean's List:}{ Awarded for academic excellence at the University of Chicago} \\ \vspace{3pt}
+
+        \textbf{University Advanced Scholar:}{ Half-ride scholarship for selective accelerated coursework track} \\ \vspace{3pt}
+    
+        \textbf{Hispanic Scholarship Fund Scholar:}{ Recognized for academic achievement and leadership potential} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- INTERESTS -----------
+
+\section{Interests}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{Bouldering, Mathematics, Cello, Tennis, Cinema, Spikeball}}
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Technical:}{ Stochastic Calculus, Python, Excel, AutoCAD, LaTeX, R, Stata, Machine Learning} \\ \vspace{3pt}
+        
+        \textbf{Industrial:}{ Mill, Lathe, Drill, and other industrial machines} \\ \vspace{3pt}
+        
+        \textbf{Languages:}{ English (Native), Spanish (Native)} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
