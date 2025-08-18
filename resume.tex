@@ -10,10 +10,11 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{fontawesome5}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyphenat}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -37,7 +38,7 @@
 
 % Sections formatting - MODIFIED FOR MUCH BOLDER HEADINGS AND BIGGER LINES
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\Large\bfseries
+  \vspace{-12.5pt}\scshape\raggedright\Large\bfseries
 }{}{0em}{}[\color{black}\vspace{-12pt}\rule{\textwidth}{1.5pt} \vspace{-27pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -141,7 +142,7 @@
 
 %----------- EXPERIENCE -----------
 
-\section{Experience}
+\section{\textbf{Experience}}
   \vspace{3pt}
   \resumeSubHeadingListStart
 
@@ -151,7 +152,7 @@
         \resumeItemListStart
             \resumeItem{Studied probability, real and complex analysis, combinatorics, algebra, financial mathematics, and stochastic calculus under UChicago professors and graduate students}
             \resumeItem{Researched and gave talks on Schramm-Loewner Evolutions and Gaussian Free Fields under the guidance of Professor Stephen Yearwood, with special emphasis on the universality properties of these random curves}
-            \resumeItem{Published a 25-page expository paper titled "Measure Theory, Stochastic Calculus, and the Black-Scholes-Merton Model" on the measure theoretic derivation of the Black-Scholes formula using stochastic calculus and Girsanov's theorem}
+            \resumeItem{Published a 25-page expository paper titled \href{https://math.uchicago.edu/~may/REU2024/REUPapers/Esteva.pdf}{\color{blue}Measure Theory, Stochastic Calculus, and the Black-Scholes-Merton Model} on the measure theoretic derivation of the Black-Scholes formula using stochastic calculus and Girsanov's theorem}
         \resumeItemListEnd
 
     \resumeSubheading
@@ -167,19 +168,9 @@
       {\textbf{Speer Mathnasium}}{San Antonio, TX}
       {Math Instructor}{Jun 2022 \textbf{--} May 2023}
         \resumeItemListStart
-            \resumeItem{Evaluated and graded over 100 students' work, assignments, and performance while simultaneously providing instruction}
-            \resumeItem{Balanced multiple students at once to give personalized instruction on subjects ranging from algebra to advanced calculus}
+            \resumeItem{Graded over 100 students' work, assignments, and performance while simultaneously providing instruction}
+            \resumeItem{Balanced multiple students at once to give personalized instruction on subjects ranging from algebra to  calculus}
         \resumeItemListEnd
-
-    \resumeSubheading
-      {Joint Science Technology Institute}{Chicago, IL}
-      {Materials Science Researcher}{Summer 2022}
-        \resumeItemListStart
-            \resumeItem{Data analyst for Los Alamos National Laboratories, the Defense Threat Reduction Agency, and the University of New Mexico}
-            \resumeItem{Studied materials science applications in nuclear engineering by analyzing data of Helium bubbling in Palladium samples using machine learning programs created with Python}
-            \resumeItem{Presented findings to researchers on the application of machine learning on data analysis for nuclear fusion research}
-        \resumeItemListEnd
-    
   \resumeSubHeadingListEnd
 
 %----------- ACTIVITIES & LEADERSHIP -----------
@@ -204,46 +195,26 @@
             \resumeItem{Responsible for grading and providing feedback on theoretical proofs for calculus problems for the UChicago Mathematics Department}
             \resumeItem{Graded 60+ students' work every week, and provided instructors with useful feedback on the difficulty of the course}
         \resumeItemListEnd
+    \resumeSubheading
+      {Joint Science Technology Institute}{Chicago, IL}
+      {Materials Science Researcher}{Summer 2022}
+        \resumeItemListStart
+            \resumeItem{Data analyst for Los Alamos National Laboratories, the Defense Threat Reduction Agency, and the University of New Mexico}
+            \resumeItem{Studied materials science applications in nuclear engineering by analyzing data of Helium bubbling in Palladium samples using machine learning programs created with Python}
+            \resumeItem{Presented findings to researchers on the application of machine learning on data analysis for nuclear fusion research}
+        \resumeItemListEnd    
+  \resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS ---------
+
+\section{}
+  \educationSubHeadingListStart
+    \small{\fontsize{8}{10.8}\selectfont{\item \textbf{Skills}: Stochastic Calculus $|$ Python $|$ Excel $|$ AutoCAD $|$ LaTex $|$ Industrial Machines (Mill, Lathe, Drill, etc…)}}
+    \small{\fontsize{8}{10.8}\selectfont{\item \textbf{Honors/Awards}: Dean’s List $|$ University Advanced Scholar (Half-Ride Scholarship) $|$ Hispanic Scholarship Fund Scholar }}
+    \small{\fontsize{8}{10.8}\selectfont{\item \textbf{Interests}: Bouldering $|$ Math $|$ Cello $|$ Tennis $|$ \faFilm
+  \href{https://boxd.it/2ozux}{ Movies} $|$ Spikeball }}
     
-  \resumeSubHeadingListEnd
-
-%----------- AWARDS & ACHIEVEMENTS -----------
-
-\section{Awards \& Achievements}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Dean's List:}{ Awarded for academic excellence at the University of Chicago} \\ \vspace{3pt}
-
-        \textbf{University Advanced Scholar:}{ Half-ride scholarship for selective accelerated coursework track} \\ \vspace{3pt}
-    
-        \textbf{Hispanic Scholarship Fund Scholar:}{ Recognized for academic achievement and leadership potential} \\ \vspace{3pt}
-        
-    }}
-  \resumeSubHeadingListEnd
-
-%----------- INTERESTS -----------
-
-\section{Interests}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{Bouldering, Mathematics, Cello, Tennis, Cinema, Spikeball}}
-  \resumeSubHeadingListEnd
-
-%----------- SKILLS -----------
-
-\section{Skills}
-  \resumeSubHeadingListStart
-    \small{\item{
-        
-        \textbf{Technical:}{ Stochastic Calculus, Python, Excel, AutoCAD, LaTeX, R, Stata, Machine Learning} \\ \vspace{3pt}
-        
-        \textbf{Industrial:}{ Mill, Lathe, Drill, and other industrial machines} \\ \vspace{3pt}
-        
-        \textbf{Languages:}{ English (Native), Spanish (Native)} \\ \vspace{3pt}
-        
-    }}
-  \resumeSubHeadingListEnd
+  \educationSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
